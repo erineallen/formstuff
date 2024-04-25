@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    const selectElements = document.querySelectorAll('.randomize-select');
+    const selectElements = document.querySelectorAll('.randomize-select select');
 
     selectElements.forEach(selectElement => {
         const options = Array.from(selectElement.options);
