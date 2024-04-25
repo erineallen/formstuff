@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const selectElements = document.querySelectorAll('.randomize-select select');
 
-    elements.forEach(selectElements => {
-        element.style.backgroundColor = 'lightblue';
+    selectElements.forEach(selectElements => {
+        selectElements.style.backgroundColor = 'lightblue';
     });
     
     selectElements.forEach(selectElement => {
