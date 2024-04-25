@@ -7,10 +7,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     const selectElements = document.querySelectorAll('.randomize-select select');
+    const wrapper = document.querySelectorAll('.randomize-select');
+    wrapper.forEach(wrapper => {
+        wrapper.style.backgroundColor = 'lightblue'; 
+});
 
-    selectElements.forEach(selectElements => {
-        selectElements.style.backgroundColor = 'lightblue';
-    });
     
     selectElements.forEach(selectElement => {
         const options = Array.from(selectElement.options);
