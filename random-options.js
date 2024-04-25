@@ -6,12 +6,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    const selectElement = document.getElementById('my-select');
-    const options = Array.from(selectElement.options);
-    shuffle(options);
+    const selectElements = document.querySelectorAll('.randomize-select');
 
-    while (selectElement.firstChild) {
-        selectElement.removeChild(selectElement.firstChild);
-    }
-    options.forEach(option => selectElement.appendChild(option));
+    selectElements.forEach(selectElement => {
+        const options = Array.from(selectElement.options);
+        shuffle(options);
+
+        while (selectElement.firstChild) {
+            selectElement.removeChild(selectElement.firstChild);
+        }
+        options.forEach(option => selectElement.appendChild(option));
+    });
 });
